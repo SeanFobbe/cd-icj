@@ -4,7 +4,7 @@
 
  This R script downloads and processes the full set of decisions and appended opinions rendered by the International Court of Justice (ICJ) as published on <https://www.icj-cij.org> into a rich and structured human- and machine-readable data set. It is the basis for the **Corpus of Decisions: International Court of Justice (CD-ICJ)**.
 
-All data sets created with this script will always be hosted permanently open access and freely available at Zenodo, the scientific repository of CERN. Each version is uniquely identified with a persistent Digitial Object Identifier (DOI), the *Version DOI*. The newest version of the data set will always available via the link of the *Concept DOI*: https://doi.org/10.5281/zenodo.3826444
+All data sets created with this script will always be hosted permanently open access and freely available at Zenodo, the scientific repository of CERN. Each version is uniquely identified with a persistent Digitial Object Identifier (DOI), the *Version DOI*. The newest version of the data set will always available via the link of the *Concept DOI*: <https://doi.org/10.5281/zenodo.3826444>
 
 
 
