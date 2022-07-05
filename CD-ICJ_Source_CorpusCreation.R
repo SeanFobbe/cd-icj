@@ -135,7 +135,7 @@ library(quanteda.textplots)  # Specialized Plots for Text Statistics
 library(textcat)       # Classify Text Language
 library(data.table)    # Advanced Data Handling
 library(doParallel)    # Parallelization
-
+library(zip)           # Enhanced ZIP handling
 
 
 
@@ -4593,7 +4593,8 @@ zip(dir.unlabelled,
 files.source <- c(list.files(pattern = "Source"),
                   "data",
                   "functions",
-                  "buttons")
+                  "buttons",
+                  "tex")
 
 
 files.source <- grep("spin",
@@ -4606,7 +4607,8 @@ zip(paste(datashort,
           datestamp,
           "Source_Files.zip",
           sep = "_"),
-    files.source)
+    files.source,
+    mode = "mirror")
 
 
 
