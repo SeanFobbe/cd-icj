@@ -6,6 +6,7 @@ The Changelog documents changes made to the data set. Versions are named accordi
 ## Version \version 
 
 - Fixed zipping of source code; tex/ is now included
+- README and CHANGELOG are now external markdown files that are automatically integrated into the Compilation Report and Codebook; allows for easier modification and viewing on GitHub
 
 ## Version 2021-11-23
 
