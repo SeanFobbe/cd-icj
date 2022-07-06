@@ -9,7 +9,7 @@ license,Creative Commons Zero 1.0 Universal
 caseno.begin,1
 caseno.end,181
 caseno.exclude,2
-mode.debug.toggle,FALSE
+mode.debug.toggle,TRUE
 mode.debug.sample,3
 ocr.dpi,300
 plot.format,pdf png
