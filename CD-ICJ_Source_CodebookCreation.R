@@ -967,7 +967,7 @@ kable(testresult,
 
 
 
-\newpage
+#' \newpage
 
 
 cat(readLines("CHANGELOG.md"),
