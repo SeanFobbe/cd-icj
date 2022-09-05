@@ -265,6 +265,12 @@ dir.unlabelled <- paste(datashort,
 
 #'## Clean up files from previous runs
 
+
+delete <- list.files(pattern = "\\.pdf|\\.zip|\\.pdf")
+unlink(delete)
+
+
+
 for (dir in dirset){
     unlink(dir, recursive = TRUE)
 }
