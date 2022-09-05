@@ -7,8 +7,10 @@ The Changelog documents changes made to the data set. Versions are named accordi
 
 ## Version \version
 
-- Changelog is now an external markdown file
+- CHANGELOG and README are now external markdown files
 - The ZIP archive of source files now includes the TEX files
+- Config file converted to TOML format
+- All R packages are now version-controlled with {renv}
 
 
 
