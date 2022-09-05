@@ -7,8 +7,8 @@ The Changelog documents changes made to the data set. Versions are named accordi
 
 ## Version \version
 
-- Changelog is now external markdown file
-
+- Changelog is now an external markdown file
+- The ZIP archive of source files now includes the TEX files
 
 
 
