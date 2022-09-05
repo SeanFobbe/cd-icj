@@ -1,6 +1,6 @@
 #'---
 #'title: "Codebook | Corpus of Decisions: International Court of Justice (CD-ICJ)"
-#'author: Anonymized for Peer Review
+#'author: Seán Fobbe
 #'geometry: margin=3cm
 #'papersize: a4
 #'fontsize: 11pt
