@@ -376,6 +376,8 @@ if(config$cores$max == TRUE){
 
 print(fullCores)
 
+
+
 #'## Set Number of OCR Control Cores
 #' **Note:** Reduced number of control cores for OCR, as Tesseract calls up to four threads by itself.
 ocrCores <- round((fullCores / 4)) + 1  
