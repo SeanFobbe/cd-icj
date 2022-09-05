@@ -61,13 +61,13 @@ source("run_project.R")
 
 ## Open Access Publications (Fobbe)
 
-Website — [www.seanfobbe.com](https://www.seanfobbe.com)
+Website --- https://www.seanfobbe.com
 
-Open Data — <https://zenodo.org/communities/sean-fobbe-data>
+Open Data --- https://zenodo.org/communities/sean-fobbe-data
 
-Code Repository — <https://zenodo.org/communities/sean-fobbe-code>
+Code Repository --- https://zenodo.org/communities/sean-fobbe-code
 
-Regular Publications — <https://zenodo.org/communities/sean-fobbe-publications>
+Regular Publications --- https://zenodo.org/communities/sean-fobbe-publications
 
  
 
