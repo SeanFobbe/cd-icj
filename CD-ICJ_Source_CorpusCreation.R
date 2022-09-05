@@ -3077,8 +3077,7 @@ dt.allmetrics.en <- melt(summary.corpus.en,
 #'\newpage
 #+ CD-ICJ_EN_10_Distributions_LinguisticMetrics, fig.height = 10, fig.width = 8.3
 ggplot(dt.allmetrics.en, aes(x = value,
-                             y = variable,
-                             fill = variable))+
+                             y = variable))+
     geom_violin()+
     stat_summary(fun.data = f.boxplot.body,
                  geom = "errorbar",
@@ -3099,7 +3098,6 @@ ggplot(dt.allmetrics.en, aes(x = value,
                                     "Types",
                                     "Sentences")))+
     theme_bw() +
-    scale_fill_viridis_d(begin = 0.35)+
     labs(
         title = paste(datashort,
                       "| EN | Version",
@@ -3131,8 +3129,7 @@ dt.allmetrics.fr <- melt(summary.corpus.fr,
 
 #+ CD-ICJ_FR_10_Distributions_LinguisticMetrics, fig.height = 10, fig.width = 8.3
 ggplot(dt.allmetrics.fr, aes(x = value,
-                             y = variable,
-                             fill = variable)) +
+                             y = variable)) +
     geom_violin()+
     stat_summary(fun.data = f.boxplot.body,
                  geom = "errorbar",
@@ -3153,7 +3150,6 @@ ggplot(dt.allmetrics.fr, aes(x = value,
                                     "Types",
                                     "Sentences")))+
     theme_bw() +
-    scale_fill_viridis_d(begin = 0.35)+
     labs(
         title = paste(datashort,
                       "| FR | Version",
