@@ -55,7 +55,7 @@ To compile the full data set, a Compilation Report and the Codebook, copy all fi
 
 
 ```
-source("CD-ICJ_Source_FullCompilation.R")
+source("run_project.R")
 ```
 
 
