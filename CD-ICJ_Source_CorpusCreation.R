@@ -272,7 +272,7 @@ dir.unlabelled <- paste(datashort,
 #'## Clean up files from previous runs
 
 
-delete <- list.files(pattern = "\\.pdf|\\.zip|\\.pdf|\\.csv")
+delete <- list.files(pattern = "\\.pdf|\\.zip|\\.pdf|\\.csv|\\.tex")
 unlink(delete)
 
 
