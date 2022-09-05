@@ -141,7 +141,7 @@
 140,140,ICERD_GEO_RUS,Application of the International Convention on the Elimination of All Forms of Racial Discrimination (Georgia v. Russian Federation)
 141,141,IndependenceDeclarationKosovo_UNGA_NA,Accordance with international law of the unilateral declaration of independence in respect of Kosovo
 142,142,InterimAccord1995_MKD_GRC,Application of the Interim Accord of 13 September 1995 (the former Yugoslav Republic of Macedonia v. Greece)
-143,143,JurisdictionalImmunities_DEU_ITA,Jurisdictional Immunities of the State (Germany v. Italy: Greece intervening)
+143,143,JurisdictionalImmunities2008_DEU_ITA,Jurisdictional Immunities of the State (Germany v. Italy: Greece intervening)
 144,144,ObligationProsecuteExtradite_BEL_SEN,Questions relating to the Obligation to Prosecute or Extradite (Belgium v. Senegal)
 145,145,JudgmentsCivilCommercialMatters_BEL_CHE,Jurisdiction and Enforcement of Judgments in Civil and Commercial Matters (Belgium v. Switzerland)
 146,146,Judgment2867ATILO-IFAD_IFAD_NA,Judgment No.2867 of the Administrative Tribunal of the International Labour Organization upon a Complaint Filed against the International Fund for Agricultural Development
@@ -170,7 +170,7 @@
 169,169,ChagosArchipelago_UNGA_NA,Legal Consequences of the Separation of the Chagos Archipelago from Mauritius in 1965
 170,170,PedraBranca-Interpretation_MYS_SGP,"Request for Interpretation of the Judgment of 23 May 2008 in the case concerning Sovereignty over Pedra Branca/Pulau Batu Puteh, Middle Rocks and South Ledge (Malaysia/Singapore) (Malaysia v. Singapore)"
 171,171,ArbitralAward1899_GUY_VEN,Arbitral Award of 3 October 1899 (Guyana v. Venezuela)
-172,172,CERD_QAT_ARE,Application of the International Convention on the Elimination of All Forms of Racial Discrimination (Qatar v. United Arab Emirates)
+172,172,ApplicationCERD_QAT_ARE,Application of the International Convention on the Elimination of All Forms of Racial Discrimination (Qatar v. United Arab Emirates)
 173,173,ICAOCouncil-CICA_BHR-EGY-SAU-ARE_QAT,"Appeal Relating to the Jurisdiction of the ICAO Council under Article 84 of the Convention on International Civil Aviation (Bahrain, Egypt, Saudi Arabia and United Arab Emirates v. Qatar)"
 174,174,ICAOCouncil-IASTA_BHR-EGY-ARE_QAT,"Appeal Relating to the Jurisdiction of the ICAO Council under Article II, Section 2, of the 1944 International Air Services Transit Agreement (Bahrain, Egypt and United Arab Emirates v. Qatar)"
 175,175,1955AmityTreaty_IRN_USA,"Alleged violations of the 1955 Treaty of Amity, Economic Relations, and Consular Rights (Islamic Republic of Iran v. United States of America)"
@@ -178,3 +178,7 @@
 177,177,GuatemalaTerritorialInsularMaritimeClaim_GTM_BLZ,"Guatemala’s Territorial, Insular and Maritime Claim (Guatemala/Belize)"
 178,178,ApplicationGenocideConvention_GMB_MMR,Application of the Convention on the Prevention and Punishment of the Crime of Genocide (The Gambia v. Myanmar)
 179,179,LandMaritimeDelimitationSovereigntyIslands_GAB_GNQ,Land and Maritime Delimitation and Sovereignty over Islands (Gabon/Equatorial Guinea)
+180,180,ApplicationCERD_ARM_AZE,Application of the International Convention on the Elimination of All Forms of Racial Discrimination (Armenia v. Azerbaijan) 
+181,181,ApplicationCERD_AZE_ARM,Application of the International Convention on the Elimination of All Forms of Racial Discrimination (Azerbaijan v. Armenia) 
+182,182,ApplicationGenocideConvention_UKR_RUS,Allegations of Genocide under the Convention on the Prevention and Punishment of the Crime of Genocide (Ukraine v. Russian Federation) 
+183,183,JurisdictionalImmunities2022_DEU_ITA,Questions of jurisdictional immunities of the State and measures of constraint against State-owned property (Germany v. Italy) 
