@@ -12,8 +12,8 @@
 #'    number_sections: true
 #'    pandoc_args: --listings
 #'    includes:
-#'      in_header: temp/CD-ICJ_Source_TEX_Preamble_EN.tex
-#'      before_body: [tex/CD-ICJ_Source_TEX_Author.tex,tex/CD-ICJ_Source_TEX_Definitions.tex,tex/CD-ICJ_Source_TEX_CompilationTitle.tex]
+#'      in_header: tex/CD-ICJ_Source_TEX_Preamble_EN.tex
+#'      before_body: [tex/CD-ICJ_Source_TEX_Author.tex,temp/CD-ICJ_Source_TEX_Definitions.tex,tex/CD-ICJ_Source_TEX_CompilationTitle.tex]
 #'bibliography: temp/packages.bib
 #'nocite: '@*'
 #'---
