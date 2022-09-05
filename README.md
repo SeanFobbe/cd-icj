@@ -1,4 +1,4 @@
-# Corpus of Decisions: International Court of Justice (CD-ICJ)
+# README: Corpus of Decisions: International Court of Justice (CD-ICJ)
 
 ## Overview
 
