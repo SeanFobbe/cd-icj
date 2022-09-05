@@ -195,7 +195,8 @@ freq.var.ignore <- config$freqvar$ignore
 print(freq.var.ignore)
 
 
-
+#'## Set Download Timeout
+options(timeout = config$download$timeout)
 
 
 
