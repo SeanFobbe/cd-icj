@@ -93,6 +93,70 @@ source("functions/f.token.processor.R")
 
 
 
+
+#'# Manage Directories
+
+#+
+#'## Define Set of Data Directories
+
+dirset <- c("EN_PDF_ORIGINAL_FULL",
+             "FR_PDF_ORIGINAL_FULL",
+             "EN_PDF_ENHANCED_max2004",
+             "FR_PDF_ENHANCED_max2004",
+             "EN_PDF_BEST_FULL",
+             "FR_PDF_BEST_FULL",
+             "EN_PDF_BEST_MajorityOpinions",
+             "FR_PDF_BEST_MajorityOpinions",
+             "EN_TXT_BEST_FULL",
+             "FR_TXT_BEST_FULL",
+             "EN_TXT_TESSERACT_max2004",
+             "FR_TXT_TESSERACT_max2004",
+             "EN_TXT_EXTRACTED_FULL",
+             "FR_TXT_EXTRACTED_FULL")
+
+
+
+#'## Output Directory
+#' The directory name must include a terminating slash!
+outputdir <- paste0(getwd(),
+                    "/ANALYSIS/")
+
+
+
+#'## Directory for Unlabelled Files
+
+dir.unlabelled <- paste(datashort,
+                        datestamp,
+                        "UnlabelledFiles",
+                        sep = "_")
+
+
+
+#'## Clean up files from previous runs
+
+for (dir in dirset){
+    unlink(dir, recursive = TRUE)
+}
+
+unlink(outputdir, recursive = TRUE)
+unlink(dir.unlabelled, recursive = TRUE)
+unlink("temp", recursive = TRUE)
+
+
+#'## Create directories
+
+for (dir in dirset){
+    dir.create(dir)
+}
+
+
+dir.create("temp")
+dir.create(dir.unlabelled)
+dir.create(outputdir)
+
+
+
+
 #'# Parameters
 
 #+
@@ -129,11 +193,6 @@ license <- config$license$data
 print(license)
 
 
-
-#'## Output Directory
-#' The directory name must include a terminating slash!
-outputdir <- paste0(getwd(),
-                    "/ANALYSIS/")
 
 
 #'## Scope: Case Numbers
@@ -281,7 +340,7 @@ latexdefs <- c("%===========================\n% Definitions\n%==================
 #'### Write LaTeX Definitions
 
 writeLines(latexdefs,
-           "tex/CD-ICJ_Source_TEX_Definitions.tex")
+           "temp/CD-ICJ_Source_TEX_Definitions.tex")
 
 
 
@@ -321,52 +380,6 @@ quanteda_options(threads = fullCores)
 
 
 
-
-
-
-#'# Create Directories
-
-#+
-#'## Define Set of Data Directories
-
-dirset <- c("EN_PDF_ORIGINAL_FULL",
-             "FR_PDF_ORIGINAL_FULL",
-             "EN_PDF_ENHANCED_max2004",
-             "FR_PDF_ENHANCED_max2004",
-             "EN_PDF_BEST_FULL",
-             "FR_PDF_BEST_FULL",
-             "EN_PDF_BEST_MajorityOpinions",
-             "FR_PDF_BEST_MajorityOpinions",
-             "EN_TXT_BEST_FULL",
-             "FR_TXT_BEST_FULL",
-             "EN_TXT_TESSERACT_max2004",
-             "FR_TXT_TESSERACT_max2004",
-             "EN_TXT_EXTRACTED_FULL",
-             "FR_TXT_EXTRACTED_FULL")
-
-
-#'## Create Data Directories
-
-for (dir in dirset){
-    dir.create(dir)
-    }
-
-
-
-#'## Create Output Directory
-dir.create(outputdir)
-
-
-
-
-#'## Create Directory for Unlabelled Files
-
-dir.unlabelled <- paste(datashort,
-                        datestamp,
-                        "UnlabelledFiles",
-                        sep = "_")
-
-dir.create(dir.unlabelled)
 
 
 
