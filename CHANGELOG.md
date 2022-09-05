@@ -6,12 +6,12 @@ The Changelog documents changes made to the data set. Versions are named accordi
 ## Version \version
 
 - Full recompilation of data set
-- Scope now extends up to case number 183: Jurisdictional Immunities (Germany v Italy)
-- CHANGELOG and README are now external markdown files
-- The ZIP archive of source files now includes the TEX files
+- Scope extends up to case number 183: *Jurisdictional Immunities* (Germany v Italy)
+- CHANGELOG and README converted to external markdown files
+- The ZIP archive of source files includes the TEX files
 - Config file converted to TOML format
-- All R packages are now version-controlled with {renv}
-- Data set creation process now cleans up all files from previous runs before a new data set is created
+- All R packages are version-controlled with {renv}
+- Data set creation process cleans up all files from previous runs before a new data set is created
 - Remove color from violin plots (redundant)
 
 
