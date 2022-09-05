@@ -94,67 +94,6 @@ source("functions/f.token.processor.R")
 
 
 
-#'# Manage Directories
-
-#+
-#'## Define Set of Data Directories
-
-dirset <- c("EN_PDF_ORIGINAL_FULL",
-             "FR_PDF_ORIGINAL_FULL",
-             "EN_PDF_ENHANCED_max2004",
-             "FR_PDF_ENHANCED_max2004",
-             "EN_PDF_BEST_FULL",
-             "FR_PDF_BEST_FULL",
-             "EN_PDF_BEST_MajorityOpinions",
-             "FR_PDF_BEST_MajorityOpinions",
-             "EN_TXT_BEST_FULL",
-             "FR_TXT_BEST_FULL",
-             "EN_TXT_TESSERACT_max2004",
-             "FR_TXT_TESSERACT_max2004",
-             "EN_TXT_EXTRACTED_FULL",
-             "FR_TXT_EXTRACTED_FULL")
-
-
-
-#'## Output Directory
-#' The directory name must include a terminating slash!
-outputdir <- paste0(getwd(),
-                    "/ANALYSIS/")
-
-
-
-#'## Directory for Unlabelled Files
-
-dir.unlabelled <- paste(datashort,
-                        datestamp,
-                        "UnlabelledFiles",
-                        sep = "_")
-
-
-
-#'## Clean up files from previous runs
-
-for (dir in dirset){
-    unlink(dir, recursive = TRUE)
-}
-
-unlink(outputdir, recursive = TRUE)
-unlink(dir.unlabelled, recursive = TRUE)
-unlink("temp", recursive = TRUE)
-
-
-#'## Create directories
-
-for (dir in dirset){
-    dir.create(dir)
-}
-
-
-dir.create("temp")
-dir.create(dir.unlabelled)
-dir.create(outputdir)
-
-
 
 
 #'# Parameters
@@ -282,7 +221,83 @@ knitr::opts_chunk$set(fig.path = outputdir,
 
 
 
-#'## LaTeX Configuration
+
+
+
+
+#'# Manage Directories
+
+#+
+#'## Define Set of Data Directories
+
+dirset <- c("EN_PDF_ORIGINAL_FULL",
+             "FR_PDF_ORIGINAL_FULL",
+             "EN_PDF_ENHANCED_max2004",
+             "FR_PDF_ENHANCED_max2004",
+             "EN_PDF_BEST_FULL",
+             "FR_PDF_BEST_FULL",
+             "EN_PDF_BEST_MajorityOpinions",
+             "FR_PDF_BEST_MajorityOpinions",
+             "EN_TXT_BEST_FULL",
+             "FR_TXT_BEST_FULL",
+             "EN_TXT_TESSERACT_max2004",
+             "FR_TXT_TESSERACT_max2004",
+             "EN_TXT_EXTRACTED_FULL",
+             "FR_TXT_EXTRACTED_FULL")
+
+
+
+#'## Output Directory
+#' The directory name must include a terminating slash!
+outputdir <- paste0(getwd(),
+                    "/ANALYSIS/")
+
+
+
+#'## Directory for Unlabelled Files
+
+dir.unlabelled <- paste(datashort,
+                        datestamp,
+                        "UnlabelledFiles",
+                        sep = "_")
+
+
+
+#'## Clean up files from previous runs
+
+for (dir in dirset){
+    unlink(dir, recursive = TRUE)
+}
+
+unlink(outputdir, recursive = TRUE)
+unlink(dir.unlabelled, recursive = TRUE)
+unlink("temp", recursive = TRUE)
+
+
+#'## Create directories
+
+for (dir in dirset){
+    dir.create(dir)
+}
+
+
+dir.create("temp")
+dir.create(dir.unlabelled)
+dir.create(outputdir)
+
+
+
+
+
+
+
+
+
+
+
+
+
+#'# LaTeX Configuration
 
 #+
 #'### Construct LaTeX Definitions
