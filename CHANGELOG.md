@@ -12,6 +12,7 @@ The Changelog documents changes made to the data set. Versions are named accordi
 - Config file converted to TOML format
 - All R packages are now version-controlled with {renv}
 - Data set creation process now cleans up all files from previous runs before a new data set is created
+- Remove color from violin plots (redundant)
 
 
 
