@@ -967,29 +967,15 @@ kable(testresult,
 
 
 
-
-#+
-#'# Changelog
-#' The Changelog documents changes made to the data set. Versions are named according to the day on which the data creation process began.
-#' \vspace{1cm}
-
-#'\ra{1.5}
-#'\begin{centering}
-#'\begin{longtable}{p{3cm}p{11cm}}
-
-#'\toprule
-
-#'Version & Notes\\
-
-#'\midrule
+\newpage
 
 
-#' \version & Initial Release\\
+cat(readLines("CHANGELOG.md"),
+    sep = "\n")
 
-#'\bottomrule
 
-#'\end{longtable}
-#'\end{centering}
+
+
 
 
 
