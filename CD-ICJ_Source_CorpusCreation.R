@@ -98,8 +98,7 @@ source("functions/f.token.processor.R")
 #+
 #'## Read Configuration File
 #' All configuration options are set in a separate configuration file that is read here. They should only be changed in that file!
-#'
-#' The configuration is read, printed, re-written to a temporary file and re-read to achieve transposition with correct column classes, something fread() cannot do directly. This procedure allows for a source CSV file that is easier to edit and easier to access within R.
+
 
 config <- RcppTOML::parseTOML("config.toml")
 print(config)
@@ -109,24 +108,24 @@ print(config)
 #+
 #'## Name of Data Set
 
-datashort <- config$datashort
+datashort <- config$project$shortname
 print(datashort)
 
 
 #'## DOI of Data Set Concept
 
-doi.concept <- config$doi.data.concept
+doi.concept <- config$doi$data$concept
 print(doi.concept)
 
 
 #'## DOI of Specific Version
 
-doi.version <- config$doi.data.version
+doi.version <- config$doi$data$version
 print(doi.version)
 
 
 #'## License
-license <- config$license
+license <- config$license$data
 print(license)
 
 
@@ -144,9 +143,9 @@ outputdir <- paste0(getwd(),
 #'
 #' The variable for the final case number --- caseno.end --- must be set manually.
 
-caseno.begin  <- config$caseno.begin
-caseno.end <- config$caseno.end
-caseno.exclude <- config$caseno.exclude
+caseno.begin  <- config$caseno$begin
+caseno.end <- config$caseno$end
+caseno.exclude <- config$caseno$exclude
 
 print(caseno.begin)
 print(caseno.end)
@@ -159,8 +158,8 @@ print(caseno.exclude)
 #' In addition to the mandatory test cases debugging mode will draw two random samples of size *debug.sample*, one from older and one from more recent cases of the ICJ.
 
 
-mode.debug.toggle <- config$mode.debug.toggle
-mode.debug.sample <- config$mode.debug.sample
+mode.debug.toggle <- config$debug$toggle
+mode.debug.sample <- config$debug$sample
 
 print(mode.debug.toggle)
 print(mode.debug.sample)
@@ -170,7 +169,7 @@ print(mode.debug.sample)
 #'## DPI for OCR
 #' This is the resolution at which PDF files will be converted to TIFF during the OCR step. DPI values will significantly affect the quality of text ouput and file size. Higher DPI requires more RAM, means higher quality text and greater PDF file size. A value of 300 is recommended.
 
-ocr.dpi <- config$ocr.dpi
+ocr.dpi <- config$ocr$dpi
 print(ocr.dpi)
 
 
@@ -183,9 +182,7 @@ print(ocr.dpi)
 #' It is a good idea to add variables to this list that are unlikely to produce useful frequency tables. This is often the case for variables with a very large proportion of unique values. Use this option judiciously, as frequency tables are useful for detecting anomalies in the metadata.
 
 
-freq.var.ignore <- unlist(tstrsplit(config$freq.var.ignore,
-                                split = " "))
-
+freq.var.ignore <- config$freqvar$ignore
 print(freq.var.ignore)
 
 
@@ -198,30 +195,28 @@ print(freq.var.ignore)
 #+
 #'### Image Output File Formats
 
-plot.format <- unlist(tstrsplit(config$plot.format,
-                                split = " "))
-
-print(plot.format)
+fig.format <- config$fig$format
+print(fig.format)
 
 
 #'### DPI for Raster Graphics
 
-plot.dpi <- config$plot.dpi
-print(plot.dpi)
+fig.dpi <- config$fig$dpi
+print(fig.dpi)
 
 
 
 #'### Alignment of Diagrams in Report
 
-fig.align <- config$fig.align
+fig.align <- config$fig$align
 print(fig.align)
 
 
 
 #'### Set Knitr Options
 knitr::opts_chunk$set(fig.path = outputdir,
-                      dev = plot.format,
-                      dpi = plot.dpi,
+                      dev = fig.format,
+                      dpi = fig.dpi,
                       fig.align = fig.align)
 
 
