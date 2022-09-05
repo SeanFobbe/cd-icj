@@ -101,26 +101,8 @@ source("functions/f.token.processor.R")
 #'
 #' The configuration is read, printed, re-written to a temporary file and re-read to achieve transposition with correct column classes, something fread() cannot do directly. This procedure allows for a source CSV file that is easier to edit and easier to access within R.
 
-config <- fread("CD-ICJ_Source_Config.csv")
-
-kable(config,
-      format = "latex",
-      align = c("p{5cm}",
-                "p{9cm}"),
-      booktabs = TRUE,
-      col.names = c("Key",
-                    "Value"))
-
-temp <- transpose(config,
-                  make.names = "key")
-
-fwrite(temp,
-       "temp.csv")
-
-config <- fread("temp.csv")
-
-unlink("temp.csv")
-
+config <- RcppTOML::parseTOML("config.toml")
+print(config)
 
 
 
