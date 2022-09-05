@@ -4590,10 +4590,16 @@ zip(dir.unlabelled,
 
 #'## ZIP Source Files
 
-files.source <- c(list.files(pattern = "Source"),
-                  "data",
-                  "functions",
-                  "buttons")
+files.source <-  c(list.files(pattern = "\\.R$|\\.toml$|\\.md$|\\.Rmd$"),
+                   "data",
+                   "functions",
+                   "tex",
+                   "buttons",
+                   list.files(pattern = "renv\\.lock|\\.Rprofile",
+                              all.files = TRUE),
+                   list.files("renv",
+                              pattern = "activate\\.R",
+                              full.names = TRUE))
 
 
 files.source <- grep("spin",
