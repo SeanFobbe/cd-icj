@@ -362,9 +362,18 @@ write_bib(c(.packages()),
 
 #+
 #'## Detect Number of Logical Cores
-#' This will detect the maximum number of threads (= logical cores) available on the system.
+#' This will detect the maximum number of threads (= logical cores) available on the system or set them according to the config file.
 
-fullCores <- detectCores()
+if(config$cores$max == TRUE){
+
+    fullCores <- detectCores()
+
+}else{
+
+    fullCores <- config$cores$number
+    
+}
+
 print(fullCores)
 
 #'## Set Number of OCR Control Cores
