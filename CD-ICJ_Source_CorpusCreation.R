@@ -863,6 +863,10 @@ links.corrected <- mgsub(links.download,
 
 links.corrected <- gsub("_", "-", links.corrected)
 
+#'## Correct Date Error
+
+links.corrected <- gsub("202206613", "20220613", links.corrected)
+
 
 #'## REGEX VALIDATION 1: Strictly Validate Links against ICJ Naming Scheme
 #' Test strict compliance of proposed download names with naming scheme used by ICJ. The result of a successful test should be an empty character vector!
