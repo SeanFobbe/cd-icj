@@ -1211,6 +1211,21 @@ unlink(odd.english)
 
 
 
+#'## Amity Treaty Order
+#' Note: this file is bilingual. The English pages are removed manually.
+
+filename <- "175-20210721-ORD-01-00-FR.pdf"
+
+file.temp <- paste0(filename,
+                    "-temp")
+
+file.rename(filename, file.temp)
+
+pdf_subset(file.temp, c(1:4, 6, 8), filename)
+
+unlink(file.temp)
+
+
 
 
 
