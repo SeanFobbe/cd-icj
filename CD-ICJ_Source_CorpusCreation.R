@@ -629,7 +629,8 @@ if(mode.debug.toggle == TRUE){
                      146,
                      152,
                      sample(153:caseno.end,
-                            mode.debug.sample))
+                            mode.debug.sample),
+                     175)
     caseno.full <- sort(caseno.full)
     }
 
