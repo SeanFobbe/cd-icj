@@ -30,7 +30,7 @@ caseno.exclude = 2
 
 # Debugging
 
-debug.toggle = true
+debug.toggle = false
 debug.sample = 3 
 
 
