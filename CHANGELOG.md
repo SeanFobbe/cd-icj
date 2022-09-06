@@ -13,6 +13,7 @@ The Changelog documents changes made to the data set. Versions are named accordi
 - All R packages are version-controlled with {renv}
 - Data set creation process cleans up all files from previous runs before a new data set is created
 - Remove redundant color from violin plots
+- Added custom split instructions for the 2021-07-21 Order in the Amity Treaty case
 
 
 
