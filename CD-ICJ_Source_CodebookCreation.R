@@ -642,7 +642,7 @@ kable(stats.ling.fr,
 
 
 
-
+#'\newpage
 #+
 #'## Most Frequent Tokens (English)
 #'\label{toptokens-en}
@@ -655,6 +655,8 @@ kable(stats.ling.fr,
 #'### Term Frequency/Inverse Document Frequency Weighting (TF-IDF)
 #' ![](ANALYSIS/CD-ICJ_EN_14_Top50Tokens_TFIDF-Weighting_Scatter-1.pdf)
 
+
+#'\newpage
 #+
 #'## Most Frequent Tokens (French)
 #'\label{toptokens-fr}
