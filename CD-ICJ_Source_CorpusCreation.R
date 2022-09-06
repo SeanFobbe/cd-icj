@@ -859,6 +859,11 @@ links.corrected <- mgsub(links.download,
                          unlabelled.in$new)
 
 
+#'## Correct Underscores
+
+links.corrected <- gsub("_", "-", links.corrected)
+
+
 #'## REGEX VALIDATION 1: Strictly Validate Links against ICJ Naming Scheme
 #' Test strict compliance of proposed download names with naming scheme used by ICJ. The result of a successful test should be an empty character vector!
 
