@@ -1309,8 +1309,6 @@ stage <- fread("data/CD-ICJ_Source_Stages_Filenames.csv")
 
 
 
-files <- list.files("CD-ICJ_2021-07-12_EN_TXT_BEST_FULL/EN_TXT_BEST_FULL/")
-
 filenames.enhanced3 <- mgsub(filenames.enhanced2,
                              stage$old,
                              stage$new)
