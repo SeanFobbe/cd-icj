@@ -9,6 +9,7 @@ The Changelog documents changes made to the data set. Versions are named accordi
 - Scope extends up to case number 187: *Obligations of States in respect of climate change * (Advisory Opinion)
 - Simplified config file
 - Simplified function loading
+- Ensure that debug mode only processes cases once
 - Contents of source ZIP file linked to Git manifest
 
 
