@@ -675,10 +675,7 @@ for (caseno in caseno.full) {
 
 links <- unlist(links.list)
 
-links.unique <- unique(links)
-
-links.download <- paste0("https://www.icj-cij.org",
-                         links.unique)
+links.download <- unique(links)
 
 
 
