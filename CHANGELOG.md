@@ -6,6 +6,12 @@ The Changelog documents changes made to the data set. Versions are named accordi
 ## Version \version
 
 - Full recompilation of data set
+- Simplified config file
+
+
+## Version 2022-09-07
+
+- Full recompilation of data set
 - Scope extends up to case number 183: *Jurisdictional Immunities* (Germany v Italy)
 - CHANGELOG and README converted to external markdown files
 - The ZIP archive of source files includes the TEX files
