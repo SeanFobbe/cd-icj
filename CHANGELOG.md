@@ -6,6 +6,7 @@ The Changelog documents changes made to the data set. Versions are named accordi
 ## Version \version
 
 - Full recompilation of data set
+- Scope extends up to case number 187: *Obligations of States in respect of climate change * (Advisory Opinion)
 - Simplified config file
 
 
