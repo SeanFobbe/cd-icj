@@ -7,7 +7,7 @@ The Changelog documents changes made to the data set. Versions are named accordi
 
 - Full recompilation of data set
 - Scope extends up to case number 187: *Obligations of States in respect of climate change * (Advisory Opinion)
-- Upgraded OCR to Tesseract 5.30
+- Upgraded OCR to Tesseract 5.3.0
 - Simplified config file
 - Simplified function loading
 - Ensure that debug mode only processes cases once
