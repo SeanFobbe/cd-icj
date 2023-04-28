@@ -717,7 +717,7 @@ links.download <- c(links.download,
 #'## List Unlabelled Files
 
 unlabelled.temp <- grep("EN|FR|BI",
-                        links.unique,
+                        links.download,
                         invert = TRUE,
                         value = TRUE)
 
