@@ -1,0 +1,50 @@
+# Targets files
+
+_targets.R
+_targets_r/
+_targets/
+
+
+# Project directories
+
+analysis/
+test/
+output/
+temp/
+temp_tesseract/
+files/
+pdf/
+txt/
+
+
+FR_PDF_BEST_FULL/
+FR_PDF_BEST_MajorityOpinions/
+FR_PDF_ENHANCED_max2004/
+FR_PDF_ORIGINAL_FULL/
+FR_TXT_BEST_FULL/
+FR_TXT_EXTRACTED_FULL/
+FR_TXT_TESSERACT_max2004/
+EN_PDF_BEST_FULL/      
+EN_PDF_BEST_MajorityOpinions/
+EN_PDF_ENHANCED_max2004/    
+EN_PDF_ORIGINAL_FULL/         
+EN_TXT_BEST_FULL/             
+EN_TXT_EXTRACTED_FULL/
+EN_TXT_TESSERACT_max2004/
+
+
+*.pdf
+*.txt
+*.tiff
+
+
+
+# git
+
+.git/
+
+
+
+# Tex
+
+tex/auto/
