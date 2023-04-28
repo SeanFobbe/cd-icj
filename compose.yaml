@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  cd-icj:
+    container_name: cd-icj
+    image: cd-icj:4.2.2
+    tty: true
+    volumes:
+      - .:/cd-icj:z
+      - ./gitconfig:/etc/gitconfig:z
