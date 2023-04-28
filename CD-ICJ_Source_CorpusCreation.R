@@ -748,8 +748,7 @@ fwrite(unlabelled.out,
 #+
 #'### Prepare
 
-unlabelled.download.url <- paste0("https://www.icj-cij.org",
-                                  unlabelled.temp)
+unlabelled.download.url <- unlabelled.temp
 
 unlabelled.download.name <- gsub("\\/", "\\_",
                                  unlabelled.temp)
