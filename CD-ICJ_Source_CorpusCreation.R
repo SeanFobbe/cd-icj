@@ -619,7 +619,7 @@ if(mode.debug.toggle == TRUE){
                      sample(153:caseno.end,
                             mode.debug.sample),
                      175)
-    caseno.full <- sort(caseno.full)
+    caseno.full <- sort(unique(caseno.full))
     }
 
 
