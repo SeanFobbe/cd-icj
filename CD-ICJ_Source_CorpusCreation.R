@@ -78,19 +78,7 @@ library(doParallel)    # Parallelization
 #'## Load Additional Functions
 #' **Note:** Each custom function will be printed in full prior to its first use in order to enhance readability. All custom functions are prefixed with \enquote{f.} for clarity.
 
-source("functions/f.boxplot.body.R")
-source("functions/f.boxplot.outliers.R")
-source("functions/f.dopar.multihashes.R")
-source("functions/f.dopar.pagenums.R")
-source("functions/f.dopar.pdfextract.R")
-source("functions/f.dopar.pdfocr.R")
-source("functions/f.fast.freqtable.R")
-source("functions/f.hyphen.remove.R")
-source("functions/f.lingsummarize.iterator.R")
-source("functions/f.linkextract.R")
-source("functions/f.selectpdflinks.R")
-source("functions/f.special.replace.R")
-source("functions/f.token.processor.R")
+lapply(list.files("functions", pattern = "\\.R$", full.names = TRUE), source)
 
 
 
