@@ -3558,6 +3558,7 @@ dfm.tfidf.fr <- dfm_tfidf(dfm.fr)
 #+
 #'### English
 
+
 tstat.en <- textstat_frequency(dfm.en,
                                n = 100)
 
@@ -3581,6 +3582,7 @@ kable(tstat.en,
 
 
 #'### French
+
 
 tstat.fr <- textstat_frequency(dfm.fr,
                                n = 100)
@@ -3661,7 +3663,7 @@ kable(tstat.tfidf.fr,
 #'### English
 
 
-#+ CD-ICJ_EN_13_Top50Tokens_TF-Weighting_Scatter, fig.height = 9, fig.width = 7
+#+ CD-ICJ_EN_13_Top50Tokens_TF-Weighting_Scatter, fig.height = 9, fig.width = 7, warning = FALSE
 print(
     ggplot(data = tstat.en[1:50, ],
            aes(x = reorder(feature,
@@ -3694,7 +3696,7 @@ print(
 #+
 #'### French
 
-#+ CD-ICJ_FR_13_Top50Tokens_TF-Weighting_Scatter, fig.height = 9, fig.width = 7
+#+ CD-ICJ_FR_13_Top50Tokens_TF-Weighting_Scatter, fig.height = 9, fig.width = 7, warning = FALSE
 print(
     ggplot(data = tstat.fr[1:50, ],
            aes(x = reorder(feature,
@@ -3729,7 +3731,7 @@ print(
 #+
 #'### English
 
-#+ CD-ICJ_EN_14_Top50Tokens_TFIDF-Weighting_Scatter, fig.height = 9, fig.width = 7
+#+ CD-ICJ_EN_14_Top50Tokens_TFIDF-Weighting_Scatter, fig.height = 9, fig.width = 7, warning = FALSE
 print(
     ggplot(data = tstat.tfidf.en[1:50, ],
            aes(x = reorder(feature,
@@ -3762,7 +3764,7 @@ print(
 #+
 #'### French
 
-#+ CD-ICJ_FR_14_Top50Tokens_TFIDF-Weighting_Scatter, fig.height = 9, fig.width = 7
+#+ CD-ICJ_FR_14_Top50Tokens_TFIDF-Weighting_Scatter, fig.height = 9, fig.width = 7, warning = FALSE
 print(
     ggplot(data = tstat.tfidf.fr[1:50, ],
            aes(x = reorder(feature,
@@ -3798,7 +3800,7 @@ print(
 #+
 #'### English
 
-#+ CD-ICJ_EN_15_Top100Tokens_TF-Weighting_Cloud, fig.height = 7, fig.width = 7
+#+ CD-ICJ_EN_15_Top100Tokens_TF-Weighting_Cloud, fig.height = 7, fig.width = 7, warning = FALSE
 textplot_wordcloud(dfm.en,
                    max_words = 100,
                    min_size = 1,
@@ -3812,7 +3814,7 @@ textplot_wordcloud(dfm.en,
 #'### French
 
 
-#+ CD-ICJ_FR_15_Top100Tokens_TF-Weighting_Cloud, fig.height = 7, fig.width = 7
+#+ CD-ICJ_FR_15_Top100Tokens_TF-Weighting_Cloud, fig.height = 7, fig.width = 7, warning = FALSE
 textplot_wordcloud(dfm.fr,
                    max_words = 100,
                    min_size = 1,
@@ -3829,7 +3831,7 @@ textplot_wordcloud(dfm.fr,
 #+
 #'### English
 
-#+ CD-ICJ_EN_16_Top100Tokens_TFIDF-Weighting_Cloud, fig.height = 7, fig.width = 7
+#+ CD-ICJ_EN_16_Top100Tokens_TFIDF-Weighting_Cloud, fig.height = 7, fig.width = 7, warning = FALSE
 textplot_wordcloud(dfm.tfidf.en,
                    max_words = 100,
                    min_size = 1,
@@ -3843,7 +3845,7 @@ textplot_wordcloud(dfm.tfidf.en,
 #'### French
 
 
-#+ CD-ICJ_FR_16_Top100Tokens_TFIDF-Weighting_Cloud, fig.height = 7, fig.width = 7
+#+ CD-ICJ_FR_16_Top100Tokens_TFIDF-Weighting_Cloud, fig.height = 7, fig.width = 7, warning = FALSE
 textplot_wordcloud(dfm.tfidf.fr,
                    max_words = 100,
                    min_size = 1,
