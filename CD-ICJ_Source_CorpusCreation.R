@@ -4574,23 +4574,10 @@ zip(dir.unlabelled,
 
 #'## ZIP Source Files
 
-files.source <-  c(list.files(pattern = "\\.R$|\\.toml$|\\.md$|\\.Rmd$"),
-                   "data",
-                   "functions",
-                   "tex",
-                   "buttons",
-                   list.files(pattern = "renv\\.lock|\\.Rprofile",
-                              all.files = TRUE),
-                   list.files("renv",
-                              pattern = "activate\\.R",
-                              full.names = TRUE))
+files.source <-  c(system2("git", "ls-files", stdout = TRUE),
+                       ".git")
 
-
-files.source <- grep("spin",
-                     files.source,
-                     value = TRUE,
-                     ignore.case = TRUE,
-                     invert = TRUE)
+ 
 
 zip(paste(datashort,
           datestamp,
