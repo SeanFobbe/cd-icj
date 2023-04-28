@@ -14,11 +14,11 @@ license.code = "MIT-0"
 # Digital Object Identifier (DOI)
 
 doi.data.concept = "10.5281/zenodo.3826444" # do not change
-doi.data.version = "10.5281/zenodo.7051929"
+doi.data.version = "10.5281/zenodo.7876286"
 
 
 doi.software.concept = "10.5281/zenodo.3977176" # do not change
-doi.software.version = "10.5281/zenodo.7051932"
+doi.software.version = "10.5281/zenodo.7876287"
 
 
 # Scope
