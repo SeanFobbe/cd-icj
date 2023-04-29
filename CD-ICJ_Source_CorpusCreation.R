@@ -2119,11 +2119,8 @@ data.best.fr$license <- as.character(rep(license,
 #'# Frequency Tables
 #' Frequency tables are a very useful tool for checking the plausibility of categorical variables and detecting anomalies in the data. This section will calculate frequency tables for all variables of interest.
 
-#+
-#'## Show Function: f.fast.freqtable
 
-#+ results = "asis"
-print(f.fast.freqtable)
+
 
 
 #+
