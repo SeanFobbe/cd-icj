@@ -34,7 +34,7 @@ exclude = 2
 
 [debug]
 
-toggle = false
+toggle = true
 sample = 3 
 
 
