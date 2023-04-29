@@ -967,14 +967,18 @@ print(begin.download)
 
 #'## Execute Download (All Files)
 
-for (i in sample(dt[,.N])){
-    
-    download.file(dt$links.download[i],
-                  dt$names.download[i])
-    
-    Sys.sleep(runif(1, 0.5, 1.5))
-    
-}
+f.download(url = dt$links.download,
+           filename = dt$names.download,
+           dir = ".",
+           clean = FALSE,
+           sleep.min = 0.5,
+           sleep.max = 1,
+           retries = 3,
+           retry.sleep.min = 2,
+           retry.sleep.max = 5,
+           timeout = config$download$timeout,
+           debug.toggle = FALSE,
+           debug.files = 500)
 
 
 #'## Timestamp (Download End)
@@ -985,108 +989,6 @@ print(end.download)
 #'## Duration (Download)
 end.download - begin.download
 
-
-
-
-#'## Debugging Mode --- Delete Random Files
-#' This section deletes random files to test the result calculations and retry mode.
-
-if (mode.debug.toggle == TRUE){
-    
-    files.pdf <- list.files(pattern = "\\.pdf")
-    
-    unlink(sample(files.pdf, 5))
-    
-}
-
-
-
-
-
-
-#'## Download Result
-
-#+
-#'### Number of Files to Download
-download.expected.N <- dt[,.N]
-print(download.expected.N)
-
-#'### Number of Files Successfully Downloaded
-files.pdf <- list.files(pattern = "\\.pdf",
-                        ignore.case = TRUE)
-
-download.success.N <- length(files.pdf)
-print(download.success.N)
-
-#'### Number of Missing Files
-missing.N <- download.expected.N - download.success.N
-print(missing.N)
-
-#'### Names of Missing Files
-missing.names <- setdiff(dt$names.download,
-                         files.pdf)
-print(missing.names)
-
-
-
-
-#'## Timestamp (Retry Download Begin)
-begin.download <- Sys.time()
-print(begin.download)
-
-
-#'## Retry Download
-
-if(missing.N > 0){
-
-    dt.retry <- dt[names.download %in% missing.names]
-    
-    for (i in 1:dt.retry[,.N]){
-        
-        response <- GET(dt.retry$links.download[i])
-        
-        Sys.sleep(runif(1, 0.25, 0.75))
-        
-        if (response$headers$"content-type" == "application/pdf" & response$status_code == 200){
-            tryCatch({download.file(url = dt.retry$links.download[i], destfile = dt.retry$names.download[i])
-            },
-            error=function(cond) {
-                return(NA)}
-            )     
-        }else{
-            print(paste0(dt.retry$names.download[i], " : no PDF available"))  
-        }
-        
-        Sys.sleep(runif(1, 0.5, 1.5))
-    } 
-}
-
-
-#'## Timestamp (Retry Download End)
-end.download <- Sys.time()
-print(end.download)
-
-#'## Duration (Retry Download)
-end.download - begin.download
-
-
-
-#'## Retry Result
-
-files.pdf <- list.files(pattern = "\\.pdf",
-                        ignore.case = TRUE)
-
-
-#'### Successful during Retry
-
-retry.success.names <- files.pdf[files.pdf %in% missing.names]
-print(retry.success.names)
-
-#'### Missing after Retry
-
-retry.missing.names <- setdiff(retry.success.names,
-                               missing.names)
-print(retry.missing.names)
 
 
 
