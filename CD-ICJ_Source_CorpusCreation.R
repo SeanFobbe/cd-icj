@@ -967,18 +967,18 @@ print(begin.download)
 
 #'## Execute Download (All Files)
 
-f.download(url = dt$links.download,
-           filename = dt$names.download,
-           dir = ".",
-           clean = FALSE,
-           sleep.min = 0.5,
-           sleep.max = 1,
-           retries = 3,
-           retry.sleep.min = 2,
-           retry.sleep.max = 5,
-           timeout = config$download$timeout,
-           debug.toggle = FALSE,
-           debug.files = 500)
+result <- f.download(url = dt$links.download,
+                     filename = dt$names.download,
+                     dir = ".",
+                     clean = FALSE,
+                     sleep.min = 0.5,
+                     sleep.max = 1,
+                     retries = 3,
+                     retry.sleep.min = 2,
+                     retry.sleep.max = 5,
+                     timeout = config$download$timeout,
+                     debug.toggle = FALSE,
+                     debug.files = 500)
 
 
 #'## Timestamp (Download End)
