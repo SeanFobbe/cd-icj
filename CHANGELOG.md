@@ -11,7 +11,8 @@ The Changelog documents changes made to the data set. Versions are named accordi
 - Simplified config file
 - Simplified function loading
 - Ensure that debug mode only processes cases once
-- Fix build of download manifest
+- Fix download manifest
+- Add new download function
 - Contents of source ZIP file linked to Git manifest
 
 
