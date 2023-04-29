@@ -1196,6 +1196,21 @@ filenames.enhanced2 <- mgsub(filenames.enhanced1,
 stage <- fread("data/CD-ICJ_Source_Stages_Filenames.csv")
 
 
+#'### Print untagged files
+
+jud <- grep("JUD", filenames.enhanced2, value = TRUE)
+
+regex <- paste(stage$old, collapse = "|")
+
+jud.filenames <- grep(regex, jud, invert = TRUE, value = TRUE)
+
+jud.patterns <- unique(gsub(".*([0-9]{4}-[0-9]{2}-[0-9]{2}_JUD_[0-9]{2}).*", "\\1", jud.filenames))
+
+print(jud.patterns)
+
+
+
+#'### Add to Filename
 
 filenames.enhanced3 <- mgsub(filenames.enhanced2,
                              stage$old,
