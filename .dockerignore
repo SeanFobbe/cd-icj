@@ -33,6 +33,8 @@ EN_TXT_EXTRACTED_FULL/
 EN_TXT_TESSERACT_max2004/
 
 
+*.log
+*.zip
 *.pdf
 *.txt
 *.tiff
