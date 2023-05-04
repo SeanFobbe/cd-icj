@@ -34,29 +34,69 @@ All data sets created with this script will always be hosted permanently open ac
 
 ## System Requirements
 
-- You must have the [R Programming Language](https://www.r-project.org/) and all **R packages** listed under the heading 'Load Packages' installed.
-- You must have the system dependencies **tesseract** and **imagemagick** (on Fedora Linux, names may differ with other Linux distibutions) installed for the OCR pipeline to work.
-- Due to the use of Fork Clusters and system commands the script as published will (probably) only run on Fedora Linux. The specific version of Fedora used is documented as part of the session information at the end of this script. With adjustments it may also work on other distributions. 
-- Parallelization will automatically be customized to your machine by detecting the maximum number of cores. A full run of this script takes approximately 11 hours on a machine with a Ryzen 3700X CPU using 16 threads, 64 GB DDR4 RAM and a fast SSD.
- - You must have the **openssl** system library installed for signature generation. If you prefer not to generate signatures this part of the script can be removed without affecting other parts, but a missing signature CSV file will result in non-fatal errors during Codebook compilation.
-- Optional code to compile a high-quality PDF report adhering to standards of strict reproducibility is included. This requires the R packages **rmarkdown**, **magick**, an installation of **LaTeX** and all the packages specified in the TEX Preamble file.
+- [Docker](https://docs.docker.com/get-docker/)
+- [Docker Compose](https://docs.docker.com/compose/install/)
+- 25 GB disk space on hard drive
+- Parallelization will automatically be customized to your machine by detecting the maximum number of cores
+- A full run of this script takes approximately 11 hours on a machine with a Ryzen 3700X CPU using 16 threads, 64 GB DDR4 RAM and a fast SSD.
 
 
 
 
 
-## Compilation
 
-All comments are in **roxygen2-style** markup for use with *spin()* or *render()* from the **rmarkdown** package. Compiling the scripts will produce the full data set, high-quality PDF reports and save all diagrams to disk. 
 
-Both scripts can be executed as ordinary R scripts without any of the markdown and report generation elements. The Corpus creation script will also produce the full data set. No diagrams or reports will be saved to disk in this scenario.
+## Instructions
 
-To compile the full data set, a Compilation Report and the Codebook, copy all files provided in the Source ZIP Archive into an empty (!) folder and run the following command in an R session:
+
+### Step 1: Prepare Folder
+
+Copy the full source code to an empty folder, for example by executing:
+
+```
+$ git clone https://github.com/seanfobbe/cd-icj
+```
+
+Always use a dedicated and **empty** folder for compiling the data set. The scripts will automatically delete all PDF, TXT and many other file types in its working directory to ensure a clean run.
+
+
+
+### Step 2: Create Docker Image
+
+The Dockerfile contains automated instructions to create a full operation system with all necessary dependencies. To create the image from the Dockerfile, please execute: 
+
+```
+$ bash docker-build-image.sh
+```
+
+
+
+### Step 3: Compile Dataset
+
+If you have previously compiled the data set, whether successfuly or not, you can delete all output and temporary files by executing:
+
+```
+$ Rscript delete_all_data.R
+```
+
+You can compile the full data set by executing:
 
 
 ```
-source("run_project.R")
+$ bash docker-run-project.sh
 ```
+
+
+
+
+
+### Results
+
+The data set and all associated files are now saved in your working directory.
+
+
+
+
 
 
 ## Open Access Publications (Fobbe)
