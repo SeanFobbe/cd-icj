@@ -1,4 +1,15 @@
 
+## Project specific files
+
+*.pdf
+*.zip
+*.tiff
+*.log
+*.tex
+./*.csv
+temp/
+ANALYSIS/
+
 
 tex/auto/
 
