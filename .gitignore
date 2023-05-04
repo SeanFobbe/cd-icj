@@ -9,6 +9,7 @@
 ./*.csv
 temp/
 ANALYSIS/
+CD-ICJ*/
 
 
 tex/auto/
