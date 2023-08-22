@@ -92,7 +92,7 @@ $ bash docker-run-project.sh
 
 ### Results
 
-The data set and all associated files are now saved in your working directory.
+The data set and all associated files are now saved in the `output/` folder of your working directory.
 
 
 
