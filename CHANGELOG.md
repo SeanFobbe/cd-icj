@@ -6,8 +6,17 @@ The Changelog documents changes made to the data set. Versions are named accordi
 ## Version \version
 
 - Full recompilation of data set
+- Scope extended up to case number 190: *Aerial Incident of 8 January 2020* (Canada, Sweden, Ukraine and United Kingdom v. Islamic Republic of Iran)
+- Updated Python toolchain
+
+
+
+## Version 2023-05-07
+
+
+- Full recompilation of data set
 - Entire computational environment now version-controlled with Docker
-- Scope extends up to case number 187: *Obligations of States in respect of climate change* (Advisory Opinion)
+- Scope extended up to case number 187: *Obligations of States in respect of climate change* (Advisory Opinion)
 - Upgrade Tesseract OCR to version 5.3.1
 - Upgrade OCR training data to "tesseract_best"
 - Simplified config file
@@ -21,7 +30,7 @@ The Changelog documents changes made to the data set. Versions are named accordi
 ## Version 2022-09-07
 
 - Full recompilation of data set
-- Scope extends up to case number 183: *Jurisdictional Immunities* (Germany v Italy)
+- Scope extended up to case number 183: *Jurisdictional Immunities* (Germany v Italy)
 - Upgraded OCR to Tesseract 5.0.1
 - CHANGELOG and README converted to external markdown files
 - The ZIP archive of source files includes the TEX files
