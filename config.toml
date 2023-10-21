@@ -16,11 +16,11 @@ code = "MIT-0"
 [doi] # Digital Object Identifier (DOI)
 
 data.concept = "10.5281/zenodo.3826444" # do not change
-data.version = "10.5281/zenodo.7876286" # checked
+data.version = "10.5281/zenodo.10030647" # checked
 
 
 software.concept = "10.5281/zenodo.3977176" # do not change
-software.version = "10.5281/zenodo.7876287" # checked
+software.version = "10.5281/zenodo.10030648" # checked
 
 
 
