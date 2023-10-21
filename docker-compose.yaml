@@ -6,6 +6,6 @@ services:
     image: cd-icj:4.2.2
     tty: true
     volumes:
-      - .:/cd-icj:z
-      - ./etc/gitconfig:/etc/gitconfig:z
-      - ./etc/magick-policy.xml:/etc/ImageMagick-6/policy.xml:z
+      - .:/cd-icj
+      - ./etc/gitconfig:/etc/gitconfig
+      - ./etc/magick-policy.xml:/etc/ImageMagick-6/policy.xml
