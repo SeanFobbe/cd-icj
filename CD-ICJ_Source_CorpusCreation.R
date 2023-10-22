@@ -721,7 +721,8 @@ links.download <- c(links.download,
 unlabelled.temp <- grep("EN|FR|BI",
                         links.download,
                         invert = TRUE,
-                        value = TRUE)
+                        value = TRUE,
+                        ignore.case = TRUE)
 
 unlabelled.out <- data.table(sort(unlabelled.temp),
                              sort(unlabelled.temp))
@@ -854,6 +855,11 @@ links.corrected <- gsub("_", "-", links.corrected)
 #'## Correct Date Error
 
 links.corrected <- gsub("202206613", "20220613", links.corrected)
+
+#'## Correct lowercasing
+
+
+
 
 
 #'## REGEX VALIDATION 1: Strictly Validate Links against ICJ Naming Scheme
