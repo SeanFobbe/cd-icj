@@ -952,12 +952,8 @@ print(englishmissing)
 #+
 #'## Prepare Download Table
 
-dt <- data.table(links.download,
-                 basename(links.corrected))
-
-setnames(dt,
-         new = c("links.download",
-                 "names.download"))
+dt <- data.table(links.download = links.download,
+                 names.download = basename(links.corrected))
 
 
 #'## Timestamp (Download Begin)
