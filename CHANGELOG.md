@@ -7,6 +7,7 @@ The Changelog documents changes made to the data set. Versions are named accordi
 
 - Full recompilation of data set
 - Scope extended up to case number 190: *Aerial Incident of 8 January 2020* (Canada, Sweden, Ukraine and United Kingdom v. Islamic Republic of Iran)
+- Add fix for lowercase components in URL basenames
 - Updated Python toolchain
 - Align docker config with Debian as host system
 
