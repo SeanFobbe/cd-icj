@@ -856,9 +856,13 @@ links.corrected <- gsub("_", "-", links.corrected)
 
 links.corrected <- gsub("202206613", "20220613", links.corrected)
 
+
 #'## Correct lowercasing
 
-
+links.corrected <- gsub("ord", "ORD", links.corrected)
+links.corrected <- gsub("jud", "JUD", links.corrected)
+links.corrected <- gsub("-en", "-EN", links.corrected)
+links.corrected <- gsub("-fr", "-FR", links.corrected)
 
 
 
