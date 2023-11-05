@@ -13,5 +13,5 @@ f.token.processor <- function(corpus){
                             pattern = c(stopwords("english"),
                                         stopwords("french")))
     return(tokens)
-    }
+}
 
