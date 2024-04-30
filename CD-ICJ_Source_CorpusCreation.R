@@ -862,9 +862,9 @@ links.corrected <- gsub("202206613", "20220613", links.corrected)
 links.corrected <- gsub("adv", "ADV", links.corrected)
 links.corrected <- gsub("ord", "ORD", links.corrected)
 links.corrected <- gsub("jud", "JUD", links.corrected)
-links.corrected <- gsub("-en", "-EN", links.corrected)
-links.corrected <- gsub("-fr", "-FR", links.corrected)
-
+links.corrected <- gsub("-en[1c]?\\.pdf", "-EN.pdf", links.corrected)
+links.corrected <- gsub("-fr[c]?\\.pdf", "-FR.pdf", links.corrected)
+links.corrected <- gsub("-bi[c]?\\.pdf", "-BI.pdf", links.corrected)
 
 
 #'## REGEX VALIDATION 1: Strictly Validate Links against ICJ Naming Scheme
