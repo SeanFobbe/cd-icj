@@ -9,7 +9,7 @@ The Changelog documents changes made to the data set. Versions are named accordi
 - Scope extended up to case number 193: *Alleged Breaches of Certain International Obligations in respect of the Occupied Palestinian Territory* (Nicaragua v. Germany) 
 
 
-## Version 
+## Version 2023-10-22
 
 - Full recompilation of data set
 - Scope extended up to case number 190: *Aerial Incident of 8 January 2020* (Canada, Sweden, Ukraine and United Kingdom v. Islamic Republic of Iran)
