@@ -5,6 +5,7 @@ The Changelog documents changes made to the data set. Versions are named accordi
 
 ## Version \version
 
+- CHANGE SOFTWARE LICENSE to GNU General Public License Version 3 (GPLv3)
 - Full recompilation of data set
 - Scope extended up to case number 193: *Alleged Breaches of Certain International Obligations in respect of the Occupied Palestinian Territory* (Nicaragua v. Germany) 
 
