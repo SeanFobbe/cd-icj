@@ -8,6 +8,7 @@ The Changelog documents changes made to the data set. Versions are named accordi
 - CHANGE SOFTWARE LICENSE to GNU General Public License Version 3 (GPLv3)
 - Full recompilation of data set
 - Scope extended up to case number 193: *Alleged Breaches of Certain International Obligations in respect of the Occupied Palestinian Territory* (Nicaragua v. Germany) 
+- Remove Python toolchain
 
 
 ## Version 2023-10-22
@@ -22,7 +23,6 @@ The Changelog documents changes made to the data set. Versions are named accordi
 
 ## Version 2023-05-07
 
-
 - Full recompilation of data set
 - Entire computational environment now version-controlled with Docker
 - Scope extended up to case number 187: *Obligations of States in respect of climate change* (Advisory Opinion)
@@ -34,6 +34,7 @@ The Changelog documents changes made to the data set. Versions are named accordi
 - Fix download manifest
 - Update download function
 - Contents of source ZIP file linked to Git manifest
+
 
 
 ## Version 2022-09-07
