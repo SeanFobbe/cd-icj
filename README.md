@@ -1,3 +1,10 @@
+# ATTENTION: Project moved to Codeberg
+
+Development of this project continues on Codeberg: https://codeberg.org/seanfobbe/cd-icj
+
+The GitHub repository will remain available as a read-only version.
+
+
 # README: Corpus of Decisions: International Court of Justice (CD-ICJ)
 
 ## Overview
